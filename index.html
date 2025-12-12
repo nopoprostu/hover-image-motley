@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hover Image</title>
+<style>
+  body { margin: 0; }
+
+  .imglink {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .imglink img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.25s ease;
+  }
+
+  .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .imglink:hover .hover { opacity: 1; }
+  .imglink:hover .normal { opacity: 0; }
+</style>
+</head>
+<body>
+
+<a href="https://sites.google.com/view/molkacreative/motley" class="imglink">
+  <img class="normal" src="https://drive.google.com/uc?export=view&id=16Y9O6j2u7-EMPVAsoOtwpmoZoxAJJrsi">
+  <img class="hover" src="https://drive.google.com/uc?export=view&id=10-3oAzDEcXXydmIZtynYMmFsnurLKfmK">
+</a>
+
+</body>
+</html>
