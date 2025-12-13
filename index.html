@@ -2,40 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
 <title>Hover Image</title>
 <style>
-  body { margin: 0; }
-
-  .imglink {
-    position: relative;
-    display: inline-block;
-    width: 100%;
+  /* Image Style */
+  .hover-image {
+    background-color: #121212;
+    color: #121212
+    border: none;
+    padding: 10px 20px;
+    font size: 16px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
   }
-
-  .imglink img {
-    width: 100%;
-    display: block;
-    transition: opacity 0.25s ease;
+  /* Hover Effect */
+  .hover-image:hover {
+    background-color: #ffffff
+      transform: scale(1.1);
   }
-
-  .hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .imglink:hover .hover { opacity: 1; }
-  .imglink:hover .normal { opacity: 0; }
 </style>
 </head>
 <body>
 
-<a href="https://sites.google.com/view/molkacreative/motley" class="imglink">
-  <img class="normal" src="normal.jpg" alt="Preview">
-  <img class="hover" src="hover.jpg" alt="Preview hover">
+<a href="https://sites.google.com/view/molkacreative/motley?authuser=0" class="hover-image">
+  View Project
 </a>
 
 </body>
